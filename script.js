@@ -29,7 +29,6 @@ let tableLayout=
 <th>checkin</th>
 <th>checkout</th>
 <th>RoomNumber</th>
-
 </tr>`
 
 
@@ -45,4 +44,5 @@ for (let i=0; i<data.length; i++){
 formTable.innerHTML= tableLayout
 }
  
+
 
