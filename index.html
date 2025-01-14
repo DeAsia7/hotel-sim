@@ -11,7 +11,8 @@
 </head>
 <body style="background: lightcoral;">
     <H1 style="text-align: center;">Hotel Simulator</H1>
-    <form onsubmit="formInputs()">
+
+    <form id="formgrab"> 
         <div class="container mt-3">
         <div class="card">
 
@@ -21,7 +22,7 @@
     
         <div class="mb-3 mt-3">
     <label for="roomnumber2">Room Number</label>
-    <input type="number" id="roomnumber2" name="RoomNumber" min="100" max="200" required>
+    <input type="number" id="roomnumber2" name="RoomNumber" min="100" max="200" required></div>
    
     <div class="mb-3 mt-3">
     <label for="stayDuration">Checkin</label>
@@ -31,12 +32,35 @@
     <label for="stayDuration2">Checkout</label>
     <input type="date" id="stayDuration2" required></div>
       
-    <button>Submit Check-in</button>
-  
+    <button>Submit Checkin</button>
 </div>
+
 </form>
 <table id="formTable"></table>
 <script src="script.js"></script>
+
+<form>
+<h1 style="text-align: center;">Guest List</h1>
+
+<div class="container mt-3">
+    <div class="card">
+      <div class="card-header">Marcos Torres</div>
+      <div class="card-body">Room# 123</div> 
+      <div class="card-footer">checkin 2025-2-12 checkout 2025-2-17 </div>
+    </div>
+  </div>
+</form>
+
+<form>
+<div class="container mt-3">
+    <div class="card">
+      <div class="card-header">Andrea Mendoza</div>
+      <div class="card-body">Room# 199</div> 
+      <div class="card-footer">checkin 2025-1-25 checkout 2025-1-28 </div>
+    </div>
+  </div>
+</form>
+
 </body>
 </html>
 
