@@ -58,16 +58,46 @@ function renderTable(){
     }
 
 
+   const isroomnumberDuplicated = data.some((item) => item.RoomNumber === RoomNumber);
+if (isroomnumberDuplicated){
+   alert("Room Number is already taken")
+} else {
+ schedule();
+}
 
 
+const ischeckinDuplicated = data.some((item) => item.checkin === checkin);
+if (ischeckinDuplicated){
+   alert("checkin date is already taken")
+} else {
+    schedule();
+}
 
-  // const isDuplicated = array.some((item) => item.RoomNumber === RoomNumber);
-//if (isDuplicated){
-   // alert("Room Number is already taken")
-//}
 
+const ischeckoutDuplicated = data.some((item) => item.checkout === checkout);
+if (ischeckoutDuplicated){
+    alert("checkout date is already taken")
+} else {
+    schedule();
+}
 
      
+
+
+/* if(room is not duplicated){
+schedule();
+} else {
+if (check in date is duplicated)
+ if(checkout date is duplicated){
+the guest is not able to schedule.
+}else{ 
+schedule();
+}
+}else{ 
+schedule();
+}
+}
+*/
    // const isDuplicate = array.some((item) => item.property ===
     //value);
    // if (isDuplicate) {
