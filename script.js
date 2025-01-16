@@ -56,23 +56,23 @@ function renderTable(){
     }
     formTable.innerHTML= tableLayout
     }
+    document.getElementById("formgrab").addEventListener("submit", schedule);
 
-
+function schedule(event){
+event.preventDefault()
    const isroomnumberDuplicated = data.some((item) => item.RoomNumber === RoomNumber);
 if (isroomnumberDuplicated){
    alert("Room Number is already taken")
 } else {
- schedule();
+     schedule();
 }
-
 
 const ischeckinDuplicated = data.some((item) => item.checkin === checkin);
 if (ischeckinDuplicated){
    alert("checkin date is already taken")
-} else {
-    schedule();
+} else {            
+schedule();
 }
-
 
 const ischeckoutDuplicated = data.some((item) => item.checkout === checkout);
 if (ischeckoutDuplicated){
@@ -80,7 +80,7 @@ if (ischeckoutDuplicated){
 } else {
     schedule();
 }
-
+}
      
 
 
