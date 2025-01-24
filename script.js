@@ -1,17 +1,24 @@
 let data = [];
 //document is better to use if im seperating the html and js
+
 document.getElementById("formgrab").addEventListener("submit", formInputs);
+
 //make sure to put event in the () so the event in line 7 doesnt cross out
+
 function formInputs(event) {
     event.preventDefault()
     let guestinput = document.getElementById("guestName")
     let guestName = guestinput.value;
 console.log(guestName + guestinput)
+
     //inside get id() match the html id
+
     let checkininput = document.getElementById("stayDuration")
     let checkin = checkininput.value;
 console.log(checkin + checkininput)
+
     //the input needs to match the .value
+    
     let checkoutinput = document.getElementById("stayDuration2")
     let checkout = checkoutinput.value;
 console.log(checkout + checkoutinput)
