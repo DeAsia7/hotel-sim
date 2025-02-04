@@ -101,8 +101,7 @@ function generatecard(RoomNumber, guestName, checkin, checkout){
      <div class="card-body">${RoomNumber}</div> 
      <div class="card-footer">${checkin}${checkout}</div>
    </div>`
-
-    }
+}
 
 
 
